@@ -1,0 +1,10 @@
+DFlexibilidad:
+ Las fábricas te permiten decidir dinámicamente qué clase concreta de objeto crear en tiempo de ejecución. Esto es útil cuando necesitas adaptar la creación de objetos según diferentes condiciones o configuraciones específicas sin modificar directamente el código del cliente.
+ Mantenibilidad:
+ Al centralizar la lógica de creación en una fábrica, cualquier cambio en cómo se construyen los objetos solo necesita realizarse en un único lugar. Esto simplifica enormemente el mantenimiento del código y reduce la posibilidad de errores al actualizar o modificar las formas en que se crean los objetos.
+ Desacoplamiento:
+ Usar fábricas te permite que tu código dependa de interfaces o clases abstractas en lugar de implementaciones concretas. Esto significa que puedes intercambiar fácilmente las implementaciones subyacentes sin que el código que usa estos objetos tenga que cambiar. Es decir, el cliente puede trabajar con las abstracciones proporcionadas por la fábrica sin preocuparse por los detalles de cómo se crea cada objeto específico.
+ Encapsulación:
+
+ Las fábricas encapsulan toda la complejidad relacionada con la creación de objetos en un solo lugar. Esto proporciona una capa de abstracción que mejora la organización y legibilidad del código, facilitando la comprensión de cómo se gestiona la creación de objetos complejos dentro de tu aplicación.
+Por ejemplo, si uno necesita cambiar la implementación de EmailNotificacion, solo tiene que modificar su fábrica correspondiente en lugar de buscar y reemplazar todas las instancias de la nueva EmailNotificacion() en la base del código.
